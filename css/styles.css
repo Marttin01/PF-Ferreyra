@@ -5,27 +5,27 @@ img {
   font-family: "Roboto", sans-serif; }
 
 .nav {
-  background-color: white;
+  background-color: #00000a;
   height: auto;
   text-align: center; }
   .nav .red {
     color: red;
     font-weight: bolder; }
   .nav .black {
+    color: white;
     font-weight: bolder; }
 
 /*background-image: url(../img/sportfondo.jpg);*/
 #grid {
-  background-color: black; }
+  background-color: white; }
 
 #grid1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "promo promo " "banner banner " "banner1 banner1" "banner2 banner2";
+  grid-template-rows: 52rem 44rem auto 44rem auto auto;
+  grid-template-areas: "promo promo " "banner banner " "banner1 banner1" "banner2 banner21" "banner3 banner3" "banner4 banner4";
   height: 135rem;
-  width: 100%;
-  border: 1px solid black; }
+  width: 100%; }
   #grid1 .promo {
     color: white;
     grid-area: promo;
@@ -37,8 +37,7 @@ img {
     text-align: left;
     background-image: url(../img/sportfondo.jpg);
     background-size: cover;
-    background-position: center;
-    border: 1px solid black; }
+    background-position: center; }
     #grid1 .promo .promo1 {
       padding: 2rem;
       gap: 1rem;
@@ -47,17 +46,17 @@ img {
       text-align: left;
       width: 30%; }
   #grid1 .banner {
-    background-color: white;
+    background-color: #00000a;
     display: flex;
     grid-area: banner;
-    gap: 2rem;
-    margin-top: 4rem;
-    padding-top: 2rem;
-    justify-content: space-around; }
+    gap: 10rem;
+    margin-top: 0rem;
+    padding-top: 2rem; }
     #grid1 .banner .banneruno {
-      height: 18rem;
-      width: 18rem;
-      padding: 3rem; }
+      height: 30rem;
+      width: 10rem;
+      padding: 2rem;
+      color: white; }
       #grid1 .banner .banneruno .bannerunofirst {
         height: 18rem;
         width: 18rem; }
@@ -66,7 +65,11 @@ img {
       width: 18rem;
       padding: 2rem;
       background-color: #3c3c3c;
-      color: white; }
+      color: white;
+      border-radius: 1rem;
+      margin-left: 4rem;
+      margin-top: 2rem;
+      box-shadow: 0px 5px 5px 0px white; }
       #grid1 .banner .bannerdos .bannerdosfirst {
         padding: 0; }
         #grid1 .banner .bannerdos .bannerdosfirst .bannerdosfirst1 {
@@ -82,9 +85,83 @@ img {
         #grid1 .banner .bannerdos .bannerdosfirst .bannerdosfirst4 {
           margin-top: 1rem; }
   #grid1 .banner1 {
-    background-image: url(../img/banner.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 30rem;
-    gap: 2rem; }
+    background-color: #00000a;
+    grid-area: banner1;
+    display: flex;
+    color: white;
+    gap: 14rem; }
+    #grid1 .banner1 .banner1card {
+      padding: 2rem;
+      margin-top: 4rem; }
+    #grid1 .banner1 .banner1card2 {
+      margin-right: 4rem; }
+      #grid1 .banner1 .banner1card2 img {
+        border-radius: 2rem; }
+  #grid1 .banner2 {
+    grid-area: banner2;
+    background-color: #00000a;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 4rem; }
+    #grid1 .banner2 .celu img {
+      width: 15rem;
+      height: 25rem;
+      padding-left: 2rem; }
+  #grid1 .banner21 {
+    grid-area: banner21;
+    background-color: #00000a;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white; }
+    #grid1 .banner21 .banner21text {
+      margin-top: 8rem;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: "textocelu textocelu2" "textocelu3 textocelu4"; }
+      #grid1 .banner21 .banner21text .textocelu {
+        grid-area: textocelu;
+        padding: 2rem; }
+      #grid1 .banner21 .banner21text .textocelu2 {
+        grid-area: textocelu2;
+        padding: 2rem; }
+      #grid1 .banner21 .banner21text .textocelu3 {
+        grid-area: textocelu3;
+        padding: 2rem;
+        color: white;
+        font-weight: 700; }
+      #grid1 .banner21 .banner21text .textocelu4 {
+        grid-area: textocelu4;
+        padding: 2rem;
+        color: white;
+        font-weight: 700; }
+  #grid1 .banner3 {
+    grid-area: banner3;
+    background-image: linear-gradient(to bottom, #00000a, #4c4c4c, #4c4c4c);
+    display: flex;
+    gap: 2rem;
+    justify-content: center; }
+    #grid1 .banner3 .banner3card {
+      display: flex;
+      flex-direction: column;
+      width: 20rem;
+      height: auto;
+      border: 1px solid black;
+      align-items: center;
+      justify-content: start;
+      text-align: center;
+      gap: 2rem;
+      background-color: #3c3c3c;
+      box-shadow: 0px 5px 5px 0px white; }
+      #grid1 .banner3 .banner3card .banner3cardimg {
+        width: 100%;
+        height: 10rem;
+        margin-bottom: 4rem; }
+      #grid1 .banner3 .banner3card .banner3cardtitle {
+        color: white;
+        font-size: 2rem;
+        font-weight: 900; }
+      #grid1 .banner3 .banner3card .banner3cardtext {
+        color: white; }
