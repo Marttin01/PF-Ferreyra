@@ -42,7 +42,8 @@ img {
     "banner1 banner1"
     "banner2 banner21"
     "banner3 banner3"
-    "banner4 banner4";
+    "banner4 banner4"
+    "footer footer";
     height: 135rem;
     width: 100%;
     
@@ -90,6 +91,7 @@ img {
             .bannerunofirst {
                 height: 18rem;
                 width: 18rem;
+                
             }
         }
 
@@ -100,7 +102,7 @@ img {
             background-color: rgb(60, 60, 60);
             color: white;
             border-radius: 1rem;
-            margin-left: 4rem;
+            margin-left: 8rem;
             margin-top: 2rem;
             box-shadow: 0px 5px 5px 0px white;
             .bannerdosfirst {
@@ -171,6 +173,7 @@ img {
                 width: 15rem;
                 height: 25rem;
                 padding-left: 2rem;
+                transform: skewY(15deg);
             }
         }
 
@@ -226,8 +229,7 @@ img {
             display: flex;
             flex-direction: column;
             width: 20rem;
-            height: auto;
-            border: 1px solid black;
+            height: 30rem;
             align-items: center;
             justify-content: start;
             text-align: center;
@@ -250,6 +252,36 @@ img {
 
         }
 
+    }
+    
+    .banner4 {
+        background-image: linear-gradient(to bottom, rgb(76, 76, 76), white );
+        color: black;
+        grid-area: banner4;
+        
+            .preg {
+                display: flex;
+                justify-content: center;
+                padding: 2rem;
+                margin-top: 4rem;
+                gap: 2rem;
+                    .pregtitle {
+                        align-items: center;
+                        display: flex;
+                        letter-spacing: .5rem;
+                        gap: .5rem;
+                    }
+
+                    .preguntas {
+                        display: flex;
+                        flex-direction: column;
+                            h3{
+                                border-bottom: 1px solid black;
+                                padding: .5rem;
+                            }
+                    }
+            }
+
 
 
 
@@ -257,11 +289,44 @@ img {
 
 
     }
-    
-   
+
+    .footer {
+        display: flex;
+        grid-area: footer;
+        background-color:rgb(0, 0, 10) ;
+        gap: 8rem;
+        color: white;
+        padding: 4rem;
+        text-decoration: none;
+        list-style: none;
+        
+            .redes {
+                width: 12rem;
+                height: 10rem;
+                img{
+                    width: 2rem; height: 2rem;
+                }
+                gap: 2rem;
+            }
+            .terminos {
+                width: 12rem;
+                height: 10rem;
+                ul {
+                text-decoration: none;
+                list-style: none;
+                  }   
+            }
+            .datafiscal {
+                img{
+                width: 8rem;
+                height: 12rem;
+                }
+            }
 
 
 
+
+    }
 
     
 

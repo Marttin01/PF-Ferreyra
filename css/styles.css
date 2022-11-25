@@ -23,7 +23,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 52rem 44rem auto 44rem auto auto;
-  grid-template-areas: "promo promo " "banner banner " "banner1 banner1" "banner2 banner21" "banner3 banner3" "banner4 banner4";
+  grid-template-areas: "promo promo " "banner banner " "banner1 banner1" "banner2 banner21" "banner3 banner3" "banner4 banner4" "footer footer";
   height: 135rem;
   width: 100%; }
   #grid1 .promo {
@@ -67,7 +67,7 @@ img {
       background-color: #3c3c3c;
       color: white;
       border-radius: 1rem;
-      margin-left: 4rem;
+      margin-left: 8rem;
       margin-top: 2rem;
       box-shadow: 0px 5px 5px 0px white; }
       #grid1 .banner .bannerdos .bannerdosfirst {
@@ -107,7 +107,8 @@ img {
     #grid1 .banner2 .celu img {
       width: 15rem;
       height: 25rem;
-      padding-left: 2rem; }
+      padding-left: 2rem;
+      transform: skewY(15deg); }
   #grid1 .banner21 {
     grid-area: banner21;
     background-color: #00000a;
@@ -147,8 +148,7 @@ img {
       display: flex;
       flex-direction: column;
       width: 20rem;
-      height: auto;
-      border: 1px solid black;
+      height: 30rem;
       align-items: center;
       justify-content: start;
       text-align: center;
@@ -165,3 +165,49 @@ img {
         font-weight: 900; }
       #grid1 .banner3 .banner3card .banner3cardtext {
         color: white; }
+  #grid1 .banner4 {
+    background-image: linear-gradient(to bottom, #4c4c4c, white);
+    color: black;
+    grid-area: banner4; }
+    #grid1 .banner4 .preg {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+      margin-top: 4rem;
+      gap: 2rem; }
+      #grid1 .banner4 .preg .pregtitle {
+        align-items: center;
+        display: flex;
+        letter-spacing: .5rem;
+        gap: .5rem; }
+      #grid1 .banner4 .preg .preguntas {
+        display: flex;
+        flex-direction: column; }
+        #grid1 .banner4 .preg .preguntas h3 {
+          border-bottom: 1px solid black;
+          padding: .5rem; }
+  #grid1 .footer {
+    display: flex;
+    grid-area: footer;
+    background-color: #00000a;
+    gap: 8rem;
+    color: white;
+    padding: 4rem;
+    text-decoration: none;
+    list-style: none; }
+    #grid1 .footer .redes {
+      width: 12rem;
+      height: 10rem;
+      gap: 2rem; }
+      #grid1 .footer .redes img {
+        width: 2rem;
+        height: 2rem; }
+    #grid1 .footer .terminos {
+      width: 12rem;
+      height: 10rem; }
+      #grid1 .footer .terminos ul {
+        text-decoration: none;
+        list-style: none; }
+    #grid1 .footer .datafiscal img {
+      width: 8rem;
+      height: 12rem; }
