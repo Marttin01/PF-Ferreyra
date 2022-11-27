@@ -15,6 +15,11 @@ img {
     color: white;
     font-weight: bolder; }
 
+.offcanvas-body, .offcanvas-header {
+  background-color: #00000a; }
+  .offcanvas-body a, .offcanvas-header a {
+    color: red; }
+
 /*background-image: url(../img/sportfondo.jpg);*/
 #grid {
   background-color: white; }
@@ -142,8 +147,9 @@ img {
     grid-area: banner3;
     background-image: linear-gradient(to bottom, #00000a, #4c4c4c, #4c4c4c);
     display: flex;
-    gap: 2rem;
-    justify-content: center; }
+    gap: 8rem;
+    justify-content: center;
+    padding-top: 4rem; }
     #grid1 .banner3 .banner3card {
       display: flex;
       flex-direction: column;
@@ -154,7 +160,7 @@ img {
       text-align: center;
       gap: 2rem;
       background-color: #3c3c3c;
-      box-shadow: 0px 5px 5px 0px white; }
+      box-shadow: 0px 5px 5px 0px grey; }
       #grid1 .banner3 .banner3card .banner3cardimg {
         width: 100%;
         height: 10rem;
@@ -211,3 +217,30 @@ img {
     #grid1 .footer .datafiscal img {
       width: 8rem;
       height: 12rem; }
+
+* {
+  font-family: "Roboto", sans-serif; }
+
+#gridsuc {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "sucursal" "sucursal1" "sucursal2" "sucursal3" "sucursal4" "sucursal5" "sucursal6";
+  margin-top: 6rem; }
+  #gridsuc .sucursal {
+    display: flex;
+    border: 1px solid black;
+    padding: 1rem; }
+    #gridsuc .sucursal .sucursalimg {
+      width: 15rem;
+      height: 15rem; }
+    #gridsuc .sucursal .sucursalinfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2fr 1fr;
+      grid-template-areas: "text horarios" "servicios boton"; }
+      #gridsuc .sucursal .sucursalinfo .horarios {
+        display: inline; }
+        #gridsuc .sucursal .sucursalinfo .horarios p {
+          display: flex;
+          flex-direction: column; }

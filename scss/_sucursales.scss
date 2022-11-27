@@ -1,0 +1,43 @@
+* {
+    font-family: $fuente-google;
+}
+
+#gridsuc {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "sucursal"
+    "sucursal1"
+    "sucursal2"
+    "sucursal3"
+    "sucursal4"
+    "sucursal5"
+    "sucursal6";
+    margin-top: 6rem;
+    .sucursal {
+        display: flex;
+        border: 1px solid black;
+        padding: 1rem;
+        .sucursalimg {
+            width: 15rem;
+            height: 15rem;
+        }
+        .sucursalinfo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 2fr 1fr;
+            grid-template-areas: 
+            "text horarios"
+            "servicios boton" ;
+
+            .horarios {
+                display: inline;
+                p {
+                display: flex;
+                flex-direction: column;
+                }
+            }
+        }
+    }
+}
