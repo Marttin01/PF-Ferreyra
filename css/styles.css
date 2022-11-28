@@ -221,26 +221,106 @@ img {
 * {
   font-family: "Roboto", sans-serif; }
 
+img {
+  max-width: 100%; }
+
 #gridsuc {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "sucursal" "sucursal1" "sucursal2" "sucursal3" "sucursal4" "sucursal5" "sucursal6";
-  margin-top: 6rem; }
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr auto;
+  grid-template-areas: "bannersuc" "sucursal" "sucursal" "sucursal" "sucursal" "sucursal" "sucursal" "sucursal" "sucursal" "sucursal" "banner4" "footer";
+  margin-top: 3.5rem;
+  background-image: linear-gradient(to bottom, #d8d8d8, #e6e6e6, #c9c9c9, #464646, #00000a); }
+  #gridsuc .bannersuc {
+    background-image: url(../img/sportfondo6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%; }
   #gridsuc .sucursal {
+    padding: 3rem; }
+  #gridsuc .bannersucursal {
     display: flex;
-    border: 1px solid black;
-    padding: 1rem; }
-    #gridsuc .sucursal .sucursalimg {
-      width: 15rem;
-      height: 15rem; }
-    #gridsuc .sucursal .sucursalinfo {
+    background-color: white;
+    width: auto;
+    height: 18rem;
+    gap: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 5px 5px 0px gray; }
+    #gridsuc .bannersucursal .sucursalimg {
+      width: 60rem;
+      height: 60rem; }
+      #gridsuc .bannersucursal .sucursalimg img {
+        border-radius: 2rem 0rem 0rem 2rem; }
+    #gridsuc .bannersucursal .sucursalinfo {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 2fr 1fr;
+      grid-template-rows: auto auto;
       grid-template-areas: "text horarios" "servicios boton"; }
-      #gridsuc .sucursal .sucursalinfo .horarios {
-        display: inline; }
-        #gridsuc .sucursal .sucursalinfo .horarios p {
+      #gridsuc .bannersucursal .sucursalinfo .text {
+        text-align: start;
+        margin-top: 2rem;
+        border-bottom: 1px solid black; }
+      #gridsuc .bannersucursal .sucursalinfo .horarios {
+        display: inline;
+        height: fit-content;
+        text-align: center;
+        margin-top: 4rem; }
+        #gridsuc .bannersucursal .sucursalinfo .horarios p {
           display: flex;
           flex-direction: column; }
+      #gridsuc .bannersucursal .sucursalinfo .servicios {
+        height: auto;
+        width: auto;
+        display: inline;
+        margin-top: 1rem; }
+      #gridsuc .bannersucursal .sucursalinfo .boton {
+        text-align: center;
+        display: inline;
+        margin-bottom: 1rem; }
+  #gridsuc .banner4 {
+    color: white;
+    grid-area: banner4; }
+    #gridsuc .banner4 .preg {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+      margin-top: 4rem;
+      gap: 2rem; }
+      #gridsuc .banner4 .preg .pregtitle {
+        align-items: center;
+        display: flex;
+        letter-spacing: .5rem;
+        gap: .5rem; }
+      #gridsuc .banner4 .preg .preguntas {
+        display: flex;
+        flex-direction: column; }
+        #gridsuc .banner4 .preg .preguntas h3 {
+          border-bottom: 1px solid white;
+          padding: .5rem; }
+
+.footer {
+  display: flex;
+  grid-area: footer;
+  background-color: #00000a;
+  gap: 8rem;
+  color: white;
+  padding: 4rem;
+  text-decoration: none;
+  list-style: none;
+  width: 100%; }
+  .footer .redes {
+    width: 12rem;
+    height: 10rem;
+    gap: 2rem; }
+    .footer .redes img {
+      width: 2rem;
+      height: 2rem; }
+  .footer .terminos {
+    width: 12rem;
+    height: 10rem; }
+    .footer .terminos ul {
+      text-decoration: none;
+      list-style: none; }
+  .footer .datafiscal img {
+    width: 8rem;
+    height: 12rem; }

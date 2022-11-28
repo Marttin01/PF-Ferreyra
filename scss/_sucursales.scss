@@ -2,42 +2,169 @@
     font-family: $fuente-google;
 }
 
+img {
+    max-width: 100%;
+}
+
+
 #gridsuc {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr auto;
     grid-template-areas: 
+    "bannersuc"
     "sucursal"
-    "sucursal1"
-    "sucursal2"
-    "sucursal3"
-    "sucursal4"
-    "sucursal5"
-    "sucursal6";
-    margin-top: 6rem;
+    "sucursal"
+    "sucursal"
+    "sucursal"
+    "sucursal"
+    "sucursal"
+    "sucursal"
+    "sucursal"
+    "sucursal"
+    "banner4"
+    "footer";
+    margin-top: 3.5rem;
+    background-image: linear-gradient(to bottom,rgb(216, 216, 216),rgb(230, 230, 230), rgb(201, 201, 201), rgb(70, 70, 70), rgb(0,0,10));
+    .bannersuc {
+        background-image: url(../img/sportfondo6.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+     
+    }
+
+
     .sucursal {
+        padding:3rem;
+    }
+    .bannersucursal {
         display: flex;
-        border: 1px solid black;
-        padding: 1rem;
+        background-color: white;
+        width: auto;
+        height: 18rem;
+        gap: 2rem;
+        border-radius: 2rem;
+        box-shadow: 0px 5px 5px 0px gray;
         .sucursalimg {
-            width: 15rem;
-            height: 15rem;
+            width:60rem;
+            height:60rem;
+            img {
+                border-radius: 2rem 0rem 0rem 2rem;
+            }
         }
         .sucursalinfo {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 2fr 1fr;
+            grid-template-rows: auto auto;
             grid-template-areas: 
             "text horarios"
             "servicios boton" ;
+            
+
+            .text {
+                text-align: start;
+                margin-top: 2rem;
+                border-bottom: 1px solid black;
+            }
 
             .horarios {
                 display: inline;
+                height: fit-content;
+                text-align: center;
+                margin-top: 4rem;             
                 p {
                 display: flex;
                 flex-direction: column;
                 }
+          
+            }
+
+            .servicios {
+                height: auto; width: auto;
+                display: inline;
+                margin-top: 1rem;
+            }
+
+            .boton {
+                text-align: center;
+                display: inline;   
+                margin-bottom: 1rem; 
             }
         }
     }
+
+    .banner4 {
+        
+        color: white;
+        grid-area: banner4;
+        
+            .preg {
+                display: flex;
+                justify-content: center;
+                padding: 2rem;
+                margin-top: 4rem;
+                gap: 2rem;
+                    .pregtitle {
+                        align-items: center;
+                        display: flex;
+                        letter-spacing: .5rem;
+                        gap: .5rem;
+                    }
+
+                    .preguntas {
+                        display: flex;
+                        flex-direction: column;
+                            h3{
+                                border-bottom: 1px solid white;
+                                padding: .5rem;
+                            }
+                    }
+            }
+
+
+    }
+
+    
+
+
 }
+
+
+
+
+
+
+.footer {
+    display: flex;
+    grid-area: footer;
+    background-color:rgb(0, 0, 10) ;
+    gap: 8rem;
+    color: white;
+    padding: 4rem;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+        .redes {
+            width: 12rem;
+            height: 10rem;
+            img{
+                width: 2rem; height: 2rem;
+            }
+            gap: 2rem;
+        }
+        .terminos {
+            width: 12rem;
+            height: 10rem;
+            ul {
+            text-decoration: none;
+            list-style: none;
+              }   
+        }
+        .datafiscal {
+            img{
+            width: 8rem;
+            height: 12rem;
+            }
+        }
+}    
