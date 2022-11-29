@@ -324,3 +324,136 @@ img {
   .footer .datafiscal img {
     width: 8rem;
     height: 12rem; }
+
+* {
+  font-family: "Roboto", sans-serif; }
+
+img {
+  max-width: 100%; }
+
+#gridbeneficios {
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr auto auto auto auto auto auto;
+  grid-template-areas: "bannerben bannerben bannerben" "lista lista lista" "beneficios beneficios beneficios" "beneficios4 beneficios5 beneficios6" "beneficios7 beneficios8 beneficios9" "beneficios10 beneficios11 beneficios12" "footer footer footer"; }
+  #gridbeneficios .bannerben {
+    background-image: url(../img/bannerben.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-area: bannerben;
+    height: 37rem;
+    width: 100%; }
+  #gridbeneficios .lista {
+    grid-area: lista; }
+    #gridbeneficios .lista ul {
+      display: flex;
+      list-style: none;
+      text-decoration: none;
+      justify-content: space-between;
+      padding: 1rem;
+      font-weight: bolder; }
+  #gridbeneficios .beneficios {
+    grid-area: beneficios; }
+    #gridbeneficios .beneficios img {
+      width: 100%;
+      height: 15rem; }
+  #gridbeneficios .beneficios4 {
+    grid-area: beneficios4;
+    text-align: center;
+    margin-top: 4rem; }
+    #gridbeneficios .beneficios4 img {
+      width: 25rem;
+      height: 15rem;
+      box-shadow: 0px 5px 5px 0px black; }
+  #gridbeneficios .beneficios5 {
+    grid-area: beneficios5;
+    text-align: center;
+    margin-top: 4rem; }
+    #gridbeneficios .beneficios5 img {
+      width: 25rem;
+      height: 15rem;
+      box-shadow: 0px 5px 5px 0px black; }
+  #gridbeneficios .beneficios6 {
+    grid-area: beneficios6;
+    text-align: center;
+    margin-top: 4rem; }
+    #gridbeneficios .beneficios6 img {
+      width: 25rem;
+      height: 15rem;
+      box-shadow: 0px 5px 5px 0px black; }
+  #gridbeneficios .beneficios7 {
+    grid-area: beneficios7;
+    text-align: center;
+    margin-top: 4rem; }
+    #gridbeneficios .beneficios7 img {
+      width: 25rem;
+      height: 15rem;
+      box-shadow: 0px 5px 5px 0px black; }
+  #gridbeneficios .beneficios8 {
+    grid-area: beneficios8;
+    text-align: center;
+    margin-top: 4rem; }
+    #gridbeneficios .beneficios8 img {
+      width: 25rem;
+      height: 15rem;
+      box-shadow: 0px 5px 5px 0px black; }
+  #gridbeneficios .beneficios9 {
+    grid-area: beneficios9;
+    text-align: center;
+    margin-top: 4rem; }
+    #gridbeneficios .beneficios9 img {
+      width: 25rem;
+      height: 15rem;
+      box-shadow: 0px 5px 5px 0px black; }
+  #gridbeneficios .beneficios10 {
+    grid-area: beneficios10;
+    text-align: center;
+    margin-top: 4rem; }
+    #gridbeneficios .beneficios10 img {
+      width: 25rem;
+      height: 15rem;
+      box-shadow: 0px 5px 5px 0px black; }
+  #gridbeneficios .beneficios11 {
+    grid-area: beneficios11;
+    text-align: center;
+    margin-top: 4rem; }
+    #gridbeneficios .beneficios11 img {
+      width: 25rem;
+      height: 15rem;
+      box-shadow: 0px 5px 5px 0px black; }
+  #gridbeneficios .beneficios12 {
+    grid-area: beneficios12;
+    text-align: center;
+    margin-top: 4rem; }
+    #gridbeneficios .beneficios12 img {
+      width: 25rem;
+      height: 15rem;
+      box-shadow: 0px 5px 5px 0px black; }
+  #gridbeneficios .footer {
+    display: flex;
+    grid-area: footer;
+    background-color: #00000a;
+    gap: 8rem;
+    color: white;
+    padding: 4rem;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    margin-top: 6rem; }
+    #gridbeneficios .footer .redes {
+      width: 12rem;
+      height: 10rem;
+      gap: 2rem; }
+      #gridbeneficios .footer .redes img {
+        width: 2rem;
+        height: 2rem; }
+    #gridbeneficios .footer .terminos {
+      width: 12rem;
+      height: 10rem; }
+      #gridbeneficios .footer .terminos ul {
+        text-decoration: none;
+        list-style: none; }
+    #gridbeneficios .footer .datafiscal img {
+      width: 8rem;
+      height: 12rem; }
