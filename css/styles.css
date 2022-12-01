@@ -297,13 +297,16 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0%; }
+  @media (max-width: 995px) {
+    #gridsuc .sucursalinfo {
+      font-size: .7rem !important; } }
   #gridsuc .sucursal {
     padding: 3rem; }
   #gridsuc .bannersucursal {
     display: flex;
     background-color: white;
     width: auto;
-    height: 18rem;
+    height: 21.5rem;
     gap: 2rem;
     border-radius: 2rem;
     box-shadow: 0px 5px 5px 0px gray; }
@@ -312,14 +315,18 @@ img {
       height: 60rem; }
       #gridsuc .bannersucursal .sucursalimg img {
         border-radius: 2rem 0rem 0rem 2rem; }
+      @media (max-width: 1200px) {
+        #gridsuc .bannersucursal .sucursalimg .bannersucursal {
+          height: 18rem !important; } }
     #gridsuc .bannersucursal .sucursalinfo {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto;
-      grid-template-areas: "text horarios" "servicios boton"; }
+      grid-template-columns: auto auto;
+      grid-template-rows: 12rem 12rem;
+      grid-template-areas: "text horarios" "servicios boton";
+      font-size: .8; }
       #gridsuc .bannersucursal .sucursalinfo .text {
         text-align: start;
-        margin-top: 2rem;
+        margin-top: .5rem;
         border-bottom: 1px solid black; }
       #gridsuc .bannersucursal .sucursalinfo .horarios {
         display: inline;
@@ -358,11 +365,13 @@ img {
         #gridsuc .banner4 .preg .preguntas h3 {
           border-bottom: 1px solid white;
           padding: .5rem; }
+    @media (max-width: 990px) {
+      #gridsuc .banner4 .preg {
+        font-size: .5rem !important; } }
 
 .footer {
   display: flex;
   grid-area: footer;
-  background-color: #00000a;
   gap: 8rem;
   color: white;
   padding: 4rem;
@@ -385,6 +394,72 @@ img {
   .footer .datafiscal img {
     width: 8rem;
     height: 12rem; }
+
+@media screen and (max-width: 990px) {
+  .preguntas h3 {
+    font-size: .5rem !important; }
+  .pregtitle h2 {
+    font-size: .8rem; } }
+
+@media screen and (max-width: 770px) {
+  .footer {
+    font-size: .7rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0 !important; }
+  .preg {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 1200px) {
+  .bannersucursal {
+    height: 17.6rem !important; } }
+
+@media screen and (width: 1200px) {
+  .bannersucursal {
+    height: 21.4rem !important; } }
+
+@media screen and (max-width: 993px) {
+  .bannersucursal {
+    height: 21.4rem !important; } }
+
+@media screen and (width: 995px) {
+  .bannersucursal {
+    height: 21.4rem !important; } }
+
+@media screen and (max-width: 991px) {
+  .bannersucursal {
+    height: 15.3rem !important; }
+  .boton {
+    display: none !important; } }
+
+@media screen and (max-width: 767px) {
+  .bannersucursal {
+    height: 11.3rem !important; }
+  .boton {
+    display: none !important; }
+  .bannersucursal h2 {
+    font-size: .9rem; }
+  .bannersucursal p {
+    font-size: .6rem; }
+  .bannersucursal .text {
+    border: none !important; }
+  .bannersucursal .servicios {
+    display: none !important; } }
+
+@media screen and (max-width: 575px) {
+  .sucursal {
+    padding: 1rem !important; }
+  .bannersucursal {
+    width: 22rem !important;
+    padding: 0 !important; }
+    .bannersucursal img {
+      height: 11.3rem !important; }
+    .bannersucursal .sucursalinfo .horarios {
+      display: none !important; }
+    .bannersucursal .sucursalinfo p {
+      font-size: .6rem !important; } }
 
 * {
   font-family: "Roboto", sans-serif; }

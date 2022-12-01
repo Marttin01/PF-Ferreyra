@@ -34,6 +34,12 @@ img {
      
     }
 
+    @media (max-width: 995px) { 
+        .sucursalinfo {
+            font-size: .7rem !important;
+        }
+    }
+    
 
     .sucursal {
         padding:3rem;
@@ -42,7 +48,7 @@ img {
         display: flex;
         background-color: white;
         width: auto;
-        height: 18rem;
+        height: 21.5rem;
         gap: 2rem;
         border-radius: 2rem;
         box-shadow: 0px 5px 5px 0px gray;
@@ -52,19 +58,24 @@ img {
             img {
                 border-radius: 2rem 0rem 0rem 2rem;
             }
+            @media (max-width: 1200px) { 
+                .bannersucursal {
+                    height: 18rem !important;
+                }
+            }
         }
         .sucursalinfo {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;
+            grid-template-columns: auto auto;
+            grid-template-rows: 12rem 12rem;
             grid-template-areas: 
             "text horarios"
             "servicios boton" ;
-            
+            font-size: .8;
 
             .text {
                 text-align: start;
-                margin-top: 2rem;
+                margin-top: .5rem;
                 border-bottom: 1px solid black;
             }
 
@@ -121,7 +132,12 @@ img {
                             }
                     }
             }
-
+        
+        @media (max-width: 990px) { 
+             .preg {
+                  font-size: .5rem !important;
+             }
+        }
 
     }
 
@@ -138,7 +154,7 @@ img {
 .footer {
     display: flex;
     grid-area: footer;
-    background-color:rgb(0, 0, 10) ;
+    
     gap: 8rem;
     color: white;
     padding: 4rem;
@@ -168,3 +184,118 @@ img {
             }
         }
 }    
+
+@media  screen and(max-width: 990px) { 
+    .preguntas h3  {
+         font-size: .5rem !important;
+    }
+    .pregtitle h2 {
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 770px) { 
+    .footer {
+         font-size: .7rem !important;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 0 !important;
+    }
+    .preg{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .bannersucursal{
+        height: 17.6rem !important;
+    }
+}
+
+@media screen and ( width: 1200px){
+    .bannersucursal{
+        height: 21.4rem !important;
+    }
+}
+
+@media screen and ( max-width: 993px){
+    .bannersucursal{
+        height: 21.4rem !important;
+    }
+}
+@media screen and ( width: 995px){
+    .bannersucursal{
+        height: 21.4rem !important;
+    }
+}
+@media screen and ( max-width: 991px){
+    .bannersucursal{
+        height: 15.3rem !important;
+    }
+    .boton {
+        display: none !important;
+    }
+}
+
+@media screen and ( max-width: 767px){
+    .bannersucursal{
+        height: 11.3rem !important;
+    }
+    .boton {
+        display: none !important;
+    }
+    .bannersucursal {
+       
+        h2 {
+             font-size: .9rem;
+        }
+        p {
+            font-size: .6rem;
+        }
+ 
+        .text {
+            border: none !important;
+        }
+
+        .servicios {
+            display: none !important;
+        }
+
+    }
+
+
+}
+
+@media screen and ( max-width: 575px){
+   
+
+        .sucursal {
+            padding: 1rem !important;
+        }
+
+        .bannersucursal   {
+            width: 22rem !important;
+            img {
+            height: 11.3rem !important;
+            }
+            padding: 0 !important;
+            .sucursalinfo {
+
+                .horarios {
+                    display: none !important;
+                }
+                p {
+                font-size: .6rem !important;
+                }
+            }
+        }
+
+    }
+
+@media screen and (max-width:405px) {
+    
+}    
+
+
+
