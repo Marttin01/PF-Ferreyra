@@ -153,15 +153,15 @@ img {
     grid-area: banner1;
     display: flex;
     color: white;
-    gap: 14rem;
-    margin-top: 4rem; }
+    gap: 14rem; }
     #grid .banner1 .banner1card {
       padding: 2rem;
       margin-top: 4rem; }
     #grid .banner1 .banner1card2 {
       margin-right: 4rem; }
       #grid .banner1 .banner1card2 img {
-        border-radius: 2rem; }
+        border-radius: 2rem;
+        margin-top: 3rem; }
   #grid .banner2 {
     grid-area: banner2;
     background-color: #00000a;
