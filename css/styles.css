@@ -4,8 +4,12 @@ img {
 * {
   font-family: "Roboto", sans-serif; }
 
+/*background-image: url(../img/sportfondo.jpg);*/
+#grid {
+  background-color: #00000a !important; }
+
 .nav {
-  background-color: #00000a;
+  background-color: #00000a !important;
   height: auto;
   text-align: center; }
   .nav .red {
@@ -16,20 +20,16 @@ img {
     font-weight: bolder; }
 
 .offcanvas-body, .offcanvas-header {
-  background-color: #00000a; }
+  background-color: #00000a !important; }
   .offcanvas-body a, .offcanvas-header a {
     color: red; }
-
-/*background-image: url(../img/sportfondo.jpg);*/
-#grid {
-  background-color: white; }
 
 #grid1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 52rem 44rem auto 44rem auto auto;
+  grid-template-rows: 52rem auto auto auto auto auto;
   grid-template-areas: "promo promo " "banner banner " "banner1 banner1" "banner2 banner21" "banner3 banner3" "banner4 banner4" "footer footer";
-  height: 135rem;
+  height: auto;
   width: 100%; }
   #grid1 .promo {
     color: white;
@@ -50,16 +50,56 @@ img {
       flex-direction: column;
       text-align: left;
       width: 30%; }
+  @media (max-width: 1200px) {
+    #grid1 .banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0; }
+    #grid1 .bannerdos {
+      margin-right: 0;
+      margin-left: 0 !important; }
+    #grid1 .banneruno {
+      justify-content: center; }
+    #grid1 .banner1 {
+      margin-top: 0  !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem !important; }
+    #grid1 .banner2 {
+      display: none !important; }
+    #grid1 .banner21 {
+      display: none !important; }
+    #grid1 .banner3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    #grid1 .preg {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+    #grid1 .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem !important; } }
+  @media (max-width: 490px) {
+    #grid1 #grid {
+      width: auto !important; }
+    #grid1 #grid1 {
+      width: auto !important; } }
   #grid1 .banner {
     background-color: #00000a;
     display: flex;
     grid-area: banner;
-    gap: 10rem;
     margin-top: 0rem;
     padding-top: 2rem; }
     #grid1 .banner .banneruno {
-      height: 30rem;
-      width: 10rem;
+      height: auto;
+      width: auto;
       padding: 2rem;
       color: white; }
       #grid1 .banner .banneruno .bannerunofirst {
@@ -94,7 +134,8 @@ img {
     grid-area: banner1;
     display: flex;
     color: white;
-    gap: 14rem; }
+    gap: 14rem;
+    margin-top: 4rem; }
     #grid1 .banner1 .banner1card {
       padding: 2rem;
       margin-top: 4rem; }
