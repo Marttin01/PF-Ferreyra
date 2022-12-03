@@ -268,7 +268,9 @@ img {
 }
 
 @media screen and ( max-width: 575px){
-   
+    .sucursal {
+        align-items: center;
+    }
 
         .sucursal {
             padding: 1rem !important;

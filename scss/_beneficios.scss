@@ -10,11 +10,10 @@ img {
     background-color: aliceblue;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr auto auto auto auto auto auto;
+    grid-template-rows: 1fr auto  auto auto auto auto;
     grid-template-areas: 
     "bannerben bannerben bannerben"
-    "lista lista lista"
-    "beneficios beneficios beneficios"
+    "lista lista lista"  
     "beneficios4 beneficios5 beneficios6"
     "beneficios7 beneficios8 beneficios9"
     "beneficios10 beneficios11 beneficios12"
@@ -40,14 +39,7 @@ img {
         }
     }    
 
-    .beneficios{
-        grid-area: beneficios;
-        img{
-            width: 100%;
-            height: 15rem;
-            
-        }
-    }
+    
 
     .beneficios4{
         grid-area: beneficios4;
@@ -169,4 +161,29 @@ img {
 
 
 
+}
+
+@media  screen and (max-width :1120px){
+    .lista {
+       
+       ul {
+         
+        font-size: .8rem;
+        margin: 0 !important;
+        padding: 0 !important;
+        justify-content: space-around !important;
+        }
+    }  
+    
+    #gridbeneficios {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0 !important;
+    }
 }
