@@ -47,5 +47,13 @@
     "touch": "^3.1.0",
     "undefsafe": "^2.0.5"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marttin01/PreEntrega-3-Ferreyra.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Marttin01/PreEntrega-3-Ferreyra/issues"
+  },
+  "homepage": "https://github.com/Marttin01/PreEntrega-3-Ferreyra#readme",
   "description": ""
 }

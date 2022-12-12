@@ -1,0 +1,781 @@
+img {
+  max-width: 100%;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/*background-image: url(../img/sportfondo.jpg);*/
+.nav {
+  background-color: rgb(0, 0, 10) !important;
+  height: auto;
+  text-align: center;
+}
+.nav .red {
+  color: red;
+  font-weight: bolder;
+}
+.nav .black {
+  color: white;
+  font-weight: bolder;
+}
+
+.offcanvas-body, .offcanvas-header {
+  background-color: rgb(0, 0, 10) !important;
+}
+.offcanvas-body a, .offcanvas-header a {
+  color: red;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 52rem auto auto auto auto auto;
+  grid-template-areas: "nav nav" "promo promo " "banner banner " "banner1 banner1" "banner2 banner21" "banner3 banner3" "banner4 banner4" "footer footer";
+  height: auto;
+  width: 100%;
+}
+#grid nav {
+  grid-area: nav;
+  background-color: rgb(0, 0, 10) !important;
+  height: auto;
+  text-align: center;
+}
+#grid nav .red {
+  color: red;
+  font-weight: bolder;
+}
+#grid nav .black {
+  color: white;
+  font-weight: bolder;
+}
+#grid .offcanvas-body, #grid .offcanvas-header {
+  background-color: rgb(0, 0, 10) !important;
+}
+#grid .offcanvas-body a, #grid .offcanvas-header a {
+  color: red;
+}
+#grid .promo {
+  color: white;
+  grid-area: promo;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  background-image: url(../img/sportfondo.webp);
+  background-size: cover;
+  background-position: center;
+}
+#grid .promo .promo1 {
+  padding: 2rem;
+  gap: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  width: 30%;
+}
+@media (max-width: 1200px) {
+  #grid .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  #grid .bannerdos {
+    margin-right: 0;
+    margin-left: 0 !important;
+  }
+  #grid .banneruno {
+    justify-content: center;
+  }
+  #grid .banner1 {
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem !important;
+  }
+  #grid .banner2 {
+    display: none !important;
+  }
+  #grid .banner21 {
+    display: none !important;
+  }
+  #grid .banner3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #grid .preg {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #grid .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem !important;
+  }
+}
+@media (max-width: 490px) {
+  #grid #grid {
+    width: auto !important;
+  }
+  #grid #grid1 {
+    width: auto !important;
+  }
+  #grid .banner4 h2 {
+    letter-spacing: none !important;
+    gap: 0.3rem !important;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 650px) {
+  #grid .butti {
+    display: none !important;
+  }
+}
+#grid .banner {
+  background-color: rgb(0, 0, 10);
+  display: flex;
+  grid-area: banner;
+  margin-top: 0rem;
+  padding-top: 2rem;
+}
+#grid .banner .banneruno {
+  height: auto;
+  width: auto;
+  padding: 2rem;
+  color: white;
+}
+#grid .banner .banneruno .bannerunofirst {
+  height: 18rem;
+  width: 18rem;
+}
+#grid .banner .bannerdos {
+  height: 30rem;
+  width: 18rem;
+  padding: 2rem;
+  background-color: rgb(60, 60, 60);
+  color: white;
+  border-radius: 1rem;
+  margin-left: 8rem;
+  margin-top: 2rem;
+}
+#grid .banner .bannerdos .bannerdosfirst {
+  padding: 0;
+}
+#grid .banner .bannerdos .bannerdosfirst .bannerdosfirst1 {
+  border-bottom: 1px white solid;
+}
+#grid .banner .bannerdos .bannerdosfirst .bannerdosfirst2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+#grid .banner .bannerdos .bannerdosfirst .bannerdosfirst3 {
+  margin-top: 2rem;
+  text-align: center;
+  border-bottom: 1px white solid;
+  padding-bottom: 2rem;
+}
+#grid .banner .bannerdos .bannerdosfirst .bannerdosfirst4 {
+  margin-top: 1rem;
+}
+#grid .banner1 {
+  background-color: rgb(0, 0, 10);
+  grid-area: banner1;
+  display: flex;
+  color: white;
+  gap: 14rem;
+}
+#grid .banner1 .banner1card {
+  padding: 2rem;
+  margin-top: 4rem;
+}
+#grid .banner1 .banner1card2 {
+  margin-right: 4rem;
+}
+#grid .banner1 .banner1card2 img {
+  border-radius: 2rem;
+  margin-top: 3rem;
+}
+#grid .banner2 {
+  grid-area: banner2;
+  background-color: rgb(0, 0, 10);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 4rem;
+}
+#grid .banner2 .celu img {
+  width: 15rem;
+  height: 25rem;
+  padding-left: 2rem;
+  transform: skewY(15deg);
+}
+#grid .banner21 {
+  grid-area: banner21;
+  background-color: rgb(0, 0, 10);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+#grid .banner21 .banner21text {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "textocelu textocelu2" "textocelu3 textocelu4";
+}
+#grid .banner21 .banner21text .textocelu {
+  grid-area: textocelu;
+  padding: 2rem;
+}
+#grid .banner21 .banner21text .textocelu2 {
+  grid-area: textocelu2;
+  padding: 2rem;
+}
+#grid .banner21 .banner21text .textocelu3 {
+  grid-area: textocelu3;
+  padding: 2rem;
+  color: white;
+  font-weight: 700;
+}
+#grid .banner21 .banner21text .textocelu4 {
+  grid-area: textocelu4;
+  padding: 2rem;
+  color: white;
+  font-weight: 700;
+}
+#grid .banner3 {
+  grid-area: banner3;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 10), rgb(76, 76, 76), rgb(76, 76, 76));
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  padding-top: 4rem;
+}
+#grid .banner3 .banner3card {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 30rem;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  gap: 2rem;
+  background-color: rgb(60, 60, 60);
+}
+#grid .banner3 .banner3card .banner3cardimg {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 4rem;
+}
+#grid .banner3 .banner3card .banner3cardtitle {
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+#grid .banner3 .banner3card .banner3cardtext {
+  color: white;
+}
+#grid .banner4 {
+  background-image: linear-gradient(to bottom, rgb(76, 76, 76), white);
+  color: black;
+  grid-area: banner4;
+}
+#grid .banner4 .preg {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+#grid .banner4 .preg .pregtitle {
+  align-items: center;
+  display: flex;
+  letter-spacing: 0.2rem;
+  gap: 0.5rem;
+  max-width: 100%;
+}
+#grid .banner4 .preg .preguntas {
+  display: flex;
+  flex-direction: column;
+}
+#grid .banner4 .preg .preguntas h3 {
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+}
+#grid .footer {
+  display: flex;
+  grid-area: footer;
+  background-color: rgb(0, 0, 10);
+  gap: 8rem;
+  color: white;
+  padding: 4rem;
+  text-decoration: none;
+  list-style: none;
+}
+#grid .footer .redes {
+  width: 12rem;
+  height: 10rem;
+  gap: 2rem;
+}
+#grid .footer .redes img {
+  width: 2rem;
+  height: 2rem;
+}
+#grid .footer .terminos {
+  width: 12rem;
+  height: 10rem;
+}
+#grid .footer .terminos ul {
+  text-decoration: none;
+  list-style: none;
+}
+#grid .footer .datafiscal img {
+  width: 8rem;
+  height: 12rem;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+#gridsuc {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr auto;
+  grid-template-areas: "bannersuc" "sucursal" "sucursal" "sucursal" "sucursal" "sucursal" "sucursal" "sucursal" "sucursal" "sucursal" "banner4" "footer";
+  margin-top: 3.5rem;
+  background-image: linear-gradient(to bottom, rgb(216, 216, 216), rgb(230, 230, 230), rgb(201, 201, 201), rgb(70, 70, 70), rgb(0, 0, 10));
+}
+#gridsuc .bannersuc {
+  background-image: url(../img/sportfondo6.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+@media (max-width: 995px) {
+  #gridsuc .sucursalinfo {
+    font-size: 0.7rem !important;
+  }
+}
+#gridsuc .sucursal {
+  padding: 3rem;
+}
+#gridsuc .bannersucursal {
+  display: flex;
+  background-color: white;
+  width: auto;
+  height: 21.5rem;
+  gap: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0px 5px 5px 0px gray;
+}
+#gridsuc .bannersucursal .sucursalimg {
+  width: 60rem;
+  height: 60rem;
+}
+#gridsuc .bannersucursal .sucursalimg img {
+  border-radius: 2rem 0rem 0rem 2rem;
+}
+@media (max-width: 1200px) {
+  #gridsuc .bannersucursal .sucursalimg .bannersucursal {
+    height: 18rem !important;
+  }
+}
+#gridsuc .bannersucursal .sucursalinfo {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 12rem 12rem;
+  grid-template-areas: "text horarios" "servicios boton";
+  font-size: 0.8;
+}
+#gridsuc .bannersucursal .sucursalinfo .text {
+  text-align: start;
+  margin-top: 0.5rem;
+  border-bottom: 1px solid black;
+}
+#gridsuc .bannersucursal .sucursalinfo .horarios {
+  display: inline;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  margin-top: 4rem;
+}
+#gridsuc .bannersucursal .sucursalinfo .horarios p {
+  display: flex;
+  flex-direction: column;
+}
+#gridsuc .bannersucursal .sucursalinfo .servicios {
+  height: auto;
+  width: auto;
+  display: inline;
+  margin-top: 1rem;
+}
+#gridsuc .bannersucursal .sucursalinfo .boton {
+  text-align: center;
+  display: inline;
+  margin-bottom: 1rem;
+}
+#gridsuc .banner4 {
+  color: white;
+  grid-area: banner4;
+}
+#gridsuc .banner4 .preg {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+#gridsuc .banner4 .preg .pregtitle {
+  align-items: center;
+  display: flex;
+  letter-spacing: 0.5rem;
+  gap: 0.5rem;
+}
+#gridsuc .banner4 .preg .preguntas {
+  display: flex;
+  flex-direction: column;
+}
+#gridsuc .banner4 .preg .preguntas h3 {
+  border-bottom: 1px solid white;
+  padding: 0.5rem;
+}
+@media (max-width: 990px) {
+  #gridsuc .banner4 .preg {
+    font-size: 0.5rem !important;
+  }
+}
+
+.footer {
+  display: flex;
+  grid-area: footer;
+  gap: 8rem;
+  color: white;
+  padding: 4rem;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+}
+.footer .redes {
+  width: 12rem;
+  height: 10rem;
+  gap: 2rem;
+}
+.footer .redes img {
+  width: 2rem;
+  height: 2rem;
+}
+.footer .terminos {
+  width: 12rem;
+  height: 10rem;
+}
+.footer .terminos ul {
+  text-decoration: none;
+  list-style: none;
+}
+.footer .datafiscal img {
+  width: 8rem;
+  height: 12rem;
+}
+
+@media screen and (max-width: 990px) {
+  .preguntas h3 {
+    font-size: 0.5rem !important;
+  }
+  .pregtitle h2 {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .footer {
+    font-size: 0.7rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0 !important;
+  }
+  .preg {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .bannersucursal {
+    height: 17.6rem !important;
+  }
+}
+@media screen and (width: 1200px) {
+  .bannersucursal {
+    height: 21.4rem !important;
+  }
+}
+@media screen and (max-width: 993px) {
+  .bannersucursal {
+    height: 21.4rem !important;
+  }
+}
+@media screen and (width: 995px) {
+  .bannersucursal {
+    height: 21.4rem !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .bannersucursal {
+    height: 15.3rem !important;
+  }
+  .boton {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bannersucursal {
+    height: 11.3rem !important;
+  }
+  .boton {
+    display: none !important;
+  }
+  .bannersucursal h2 {
+    font-size: 0.9rem;
+  }
+  .bannersucursal p {
+    font-size: 0.6rem;
+  }
+  .bannersucursal .text {
+    border: none !important;
+  }
+  .bannersucursal .servicios {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .sucursal {
+    align-items: center;
+  }
+  .sucursal {
+    padding: 1rem !important;
+  }
+  .bannersucursal {
+    width: 22rem !important;
+    padding: 0 !important;
+  }
+  .bannersucursal img {
+    height: 11.3rem !important;
+  }
+  .bannersucursal .sucursalinfo .horarios {
+    display: none !important;
+  }
+  .bannersucursal .sucursalinfo p {
+    font-size: 0.6rem !important;
+  }
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+#gridbeneficios {
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr auto auto auto auto auto;
+  grid-template-areas: "bannerben bannerben bannerben" "lista lista lista" "beneficios4 beneficios5 beneficios6" "beneficios7 beneficios8 beneficios9" "beneficios10 beneficios11 beneficios12" "footer footer footer";
+}
+#gridbeneficios .bannerben {
+  background-image: url(../img/bannerben.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: bannerben;
+  height: 37rem;
+  width: 100%;
+}
+#gridbeneficios .lista {
+  grid-area: lista;
+}
+#gridbeneficios .lista ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 1rem;
+  font-weight: bolder;
+}
+#gridbeneficios .beneficios4 {
+  grid-area: beneficios4;
+  text-align: center;
+  margin-top: 4rem;
+}
+#gridbeneficios .beneficios4 img {
+  width: 25rem;
+  height: 15rem;
+  box-shadow: 0px 5px 5px 0px black;
+}
+#gridbeneficios .beneficios5 {
+  grid-area: beneficios5;
+  text-align: center;
+  margin-top: 4rem;
+}
+#gridbeneficios .beneficios5 img {
+  width: 25rem;
+  height: 15rem;
+  box-shadow: 0px 5px 5px 0px black;
+}
+#gridbeneficios .beneficios6 {
+  grid-area: beneficios6;
+  text-align: center;
+  margin-top: 4rem;
+}
+#gridbeneficios .beneficios6 img {
+  width: 25rem;
+  height: 15rem;
+  box-shadow: 0px 5px 5px 0px black;
+}
+#gridbeneficios .beneficios7 {
+  grid-area: beneficios7;
+  text-align: center;
+  margin-top: 4rem;
+}
+#gridbeneficios .beneficios7 img {
+  width: 25rem;
+  height: 15rem;
+  box-shadow: 0px 5px 5px 0px black;
+}
+#gridbeneficios .beneficios8 {
+  grid-area: beneficios8;
+  text-align: center;
+  margin-top: 4rem;
+}
+#gridbeneficios .beneficios8 img {
+  width: 25rem;
+  height: 15rem;
+  box-shadow: 0px 5px 5px 0px black;
+}
+#gridbeneficios .beneficios9 {
+  grid-area: beneficios9;
+  text-align: center;
+  margin-top: 4rem;
+}
+#gridbeneficios .beneficios9 img {
+  width: 25rem;
+  height: 15rem;
+  box-shadow: 0px 5px 5px 0px black;
+}
+#gridbeneficios .beneficios10 {
+  grid-area: beneficios10;
+  text-align: center;
+  margin-top: 4rem;
+}
+#gridbeneficios .beneficios10 img {
+  width: 25rem;
+  height: 15rem;
+  box-shadow: 0px 5px 5px 0px black;
+}
+#gridbeneficios .beneficios11 {
+  grid-area: beneficios11;
+  text-align: center;
+  margin-top: 4rem;
+}
+#gridbeneficios .beneficios11 img {
+  width: 25rem;
+  height: 15rem;
+  box-shadow: 0px 5px 5px 0px black;
+}
+#gridbeneficios .beneficios12 {
+  grid-area: beneficios12;
+  text-align: center;
+  margin-top: 4rem;
+}
+#gridbeneficios .beneficios12 img {
+  width: 25rem;
+  height: 15rem;
+  box-shadow: 0px 5px 5px 0px black;
+}
+#gridbeneficios .footer {
+  display: flex;
+  grid-area: footer;
+  background-color: rgb(0, 0, 10);
+  gap: 8rem;
+  color: white;
+  padding: 4rem;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  margin-top: 6rem;
+}
+#gridbeneficios .footer .redes {
+  width: 12rem;
+  height: 10rem;
+  gap: 2rem;
+}
+#gridbeneficios .footer .redes img {
+  width: 2rem;
+  height: 2rem;
+}
+#gridbeneficios .footer .terminos {
+  width: 12rem;
+  height: 10rem;
+}
+#gridbeneficios .footer .terminos ul {
+  text-decoration: none;
+  list-style: none;
+}
+#gridbeneficios .footer .datafiscal img {
+  width: 8rem;
+  height: 12rem;
+}
+
+@media screen and (max-width: 1120px) {
+  .lista ul {
+    font-size: 0.8rem;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-content: space-around !important;
+  }
+  #gridbeneficios {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0 !important;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.bannerprod {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  width: 25rem;
+  text-align: center;
+}
+
+#gridprod {
+  display: flex;
+}/*# sourceMappingURL=styles.css.map */
