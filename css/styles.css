@@ -634,6 +634,14 @@ body {
     .sector2 .productlist h2 {
       border-bottom: 1px solid white;
       padding-bottom: 1rem; }
+    .sector2 .productlist h2:hover {
+      font-size: 2.2rem !important;
+      transition: 2s;
+      cursor: pointer; }
+    .sector2 .productlist h4:hover {
+      font-size: 1.8rem !important;
+      transition: 2s;
+      cursor: pointer; }
   .sector2 .productcontact {
     margin-top: 2rem;
     background-color: black;
@@ -706,3 +714,14 @@ body {
     font-size: .9rem; }
   .sector1 {
     align-items: center; } }
+
+* {
+  font-family: "Roboto", sans-serif;
+  background-color: none; }
+
+.privacidad {
+  background-color: white;
+  text-align: left;
+  padding: 4rem;
+  margin-top: 3rem;
+  opacity: 70%; }
