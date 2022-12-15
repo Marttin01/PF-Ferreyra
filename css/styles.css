@@ -703,6 +703,11 @@ body {
   width: 100%; }
 
 @media screen and (max-width: 1150px) {
+  .productcontact {
+    display: none; }
+  body {
+    display: flex;
+    flex-direction: column; }
   .productlist h4, .productlist h2 {
     font-size: 1rem; }
   .sector1a, .sector1b, .sector1c {
